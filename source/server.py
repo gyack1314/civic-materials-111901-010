@@ -96,7 +96,7 @@ class Handler(BaseHTTPRequestHandler):
 
 @contextmanager
 def running_source(port=0):
-    server=ThreadingHTTPServer(('127.0.0.1',port),Handler)
+    server=ThreadingHTTPServer(('0.0.0.0',port),Handler)
     server.source=Source()
     thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
     try: yield 'http://127.0.0.1:'+str(server.server_port),server.source
