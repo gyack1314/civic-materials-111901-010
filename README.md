@@ -4,7 +4,7 @@
 
 ## 运行来源
 
-使用 Python 3.11，先执行 python -m pip install -r requirements.txt。
+使用 Python 3.11 或 3.12，先执行 python -m pip install -r requirements.txt。
 
 启动命令：python -m source.server --port 8765。浏览器或 HTTP 客户端访问 http://127.0.0.1:8765。接口和资料定义见 docs/source-contract.md。
 
