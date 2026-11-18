@@ -1,0 +1,4 @@
+* text=auto
+*.pdf -text
+*.xlsx -text
+*.eml -text
